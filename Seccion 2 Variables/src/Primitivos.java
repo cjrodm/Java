@@ -33,7 +33,44 @@ public class Primitivos {
         System.out.println("valor maximo de un long: "+Long.MAX_VALUE);
         System.out.println("valor minimo de un long: "+Long.MIN_VALUE);
        
+        float real = 1.5e-10F;
         System.out.println();
+        System.out.println("real = "+real);
+        System.out.println("tipo float corresponde a "+Float.BYTES);
+        System.out.println("tipo float corresponde en bites a "+Float.SIZE);
+        System.out.println("Valor maximo de un float: "+Float.MAX_VALUE);
+        System.out.println("Valor minimo de un float: "+Float.MIN_VALUE);
+        
+        double realDouble = 3.402823E28;
+        System.out.println();
+        System.out.println("real Double = "+realDouble);
+        System.out.println("tipo Double corresponde a "+Double.BYTES);
+        System.out.println("tipo Double corresponde en bites a "+Double.SIZE);
+        System.out.println("Valor maximo de un double: "+Double.MAX_VALUE);
+        System.out.println("Valor minimo de un double: "+Double.MIN_VALUE);
+        
+        char character = '\u0040';  // forma unicode
+        char decimal = 64;
+        System.out.println("character = "+character);
+        System.out.println("Decimal = "+decimal);
+        System.out.println("character = Decimal: "+(character==decimal));
+
+        char simbolo = '@';
+        // caracteres especiales
+     //   char espacio = '\u0020';
+       // char retroceso = '\b';
+       // char tabulador = '\t';
+       // char nuevaLinea = '\n';
+       // char retornoCarro = '\r';
+        System.out.println("simbolo :"+System.lineSeparator()+simbolo);
+        System.out.println("character = simbolo: "+(character==simbolo));
+        System.out.println("char corresponde en byte a :"+Character.BYTES);
+        System.out.println("char corresponde en bites a :"+Character.SIZE);
+        System.out.println("char valor maximo :"+Character.MAX_VALUE);
+        System.out.println("char valor minimo :"+Character.MIN_VALUE);
+        System.out.println();
+
+        
 
     }
 }
