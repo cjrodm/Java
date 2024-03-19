@@ -8,11 +8,19 @@ public class EjemploStringValidar {
         System.out.println("esNulo = " + esNulo);
 
         if (esNulo) {
-         curso = "Programación Java";
+            curso = "Programación Java";
         }
 
-        System.out.println(curso.toUpperCase());
-        System.out.println("bienvenido al curso: ".concat(curso));
-    }
+        boolean esVacio = curso.length() == 0;
 
+        System.out.println("esVacio = "+esVacio);
+
+        boolean esVacio2 =curso.isEmpty();
+        System.out.println("esVacio2 = "+esVacio2);
+
+        if (!esVacio) {
+            System.out.println(curso.toUpperCase());
+            System.out.println("bienvenido al curso: ".concat(curso));
+        }
+    }
 }
