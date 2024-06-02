@@ -6,16 +6,22 @@ public class OrdenamientoBurbuja {
         int count = productos.length;
 
         int contador = 0;
-        for (int i = 0; i < count; i++) {
-            for (int j = 0; i < count; j++) {
-                if (productos[i].compareTo(productos[j]) < 0) {
-                    String aux = productos[i];
-                    productos[i] = productos[j];
-                    productos[j] = aux;
+        for (int i = 0; i < count-1; i++) {
+            for (int j = 0; j < count - 1 - i; j++) {
+                if (productos[j + 1].compareTo(productos[j]) < 0) {
+                    String aux = productos[j];
+                    productos[j] = productos[j + 1];
+                    productos[j + 1] = aux;
                 }
                 contador++;
             }
         }
         System.out.println("Contado: " + contador++);
+
+        int i = 1;
+        for (String x : productos) {
+            System.out.println("[" + i + "] : " + x);
+            i++;
+        }
     }
 }
